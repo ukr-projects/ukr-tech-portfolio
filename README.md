@@ -1,5 +1,5 @@
 # My Portfolio
-<a src="https://ukr-projects.github.io/ukr-tech-portfolio/">Visit<a>
+[![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=&logoColor=white)](https://ukr-projects.github.io/ukr-tech-portfolio/)
 
 ## Overview
 
