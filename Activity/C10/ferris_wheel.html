@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Ferris Wheel</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .wheel {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 8px solid #555;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: spin 5s linear infinite;
+        }
+        .spoke {
+            position: absolute;
+            display: flex;
+            width: 4px;
+            height: 300px;
+            background: #555;
+        }
+        .spoke1 { transform: rotate(0deg); }
+        .spoke2 { transform: rotate(60deg); }
+        .spoke3 { transform: rotate(120deg); }
+        .spoke4 { transform: rotate(180deg); }
+        .spoke5 { transform: rotate(240deg); }
+        .spoke6 { transform: rotate(300deg); }
+        .cab {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+        }
+        .cab1 { transform: rotate(0deg) translateY(-140px); }
+        .cab2 { transform: rotate(60deg) translateY(-140px); }
+        .cab3 { transform: rotate(120deg) translateY(-140px); }
+        .cab4 { transform: rotate(180deg) translateY(-140px); }
+        .cab5 { transform: rotate(240deg) translateY(-140px); }
+        .cab6 { transform: rotate(300deg) translateY(-140px); }
+        .cab-inner {
+            width: 40px;
+            height: 40px;
+            background: black;
+            border: 2px solid #555;
+            border-radius: 8px;
+            animation: changeColor 2s linear infinite;            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes changeColor {
+            0% { background-color: black; }
+            50% {background-color: green;}
+            100% { background-color: aquamarine; }
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wheel">
+            <div class="spoke spoke1"></div>
+            <div class="spoke spoke2"></div>
+            <div class="spoke spoke3"></div>
+            <div class="spoke spoke4"></div>
+            <div class="spoke spoke5"></div>
+            <div class="spoke spoke6"></div>
+            <div class="cab cab1"><div class="cab-inner"></div></div>
+            <div class="cab cab2"><div class="cab-inner"></div></div>
+            <div class="cab cab3"><div class="cab-inner"></div></div>
+            <div class="cab cab4"><div class="cab-inner"></div></div>
+            <div class="cab cab5"><div class="cab-inner"></div></div>
+            <div class="cab cab6"><div class="cab-inner"></div></div>
+        </div>
+    </div>
+</body>
+</html>

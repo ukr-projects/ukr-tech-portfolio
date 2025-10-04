@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Keyframes and Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+        }
+
+        .sun{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            margin: 100px;
+        }
+
+        .planet{
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;  
+            animation: rotation 1s linear infinite;          
+            position: absolute;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg) translateX(150px);
+            }
+            100% {
+                transform: rotate(360deg) translateX(150px);
+            }                                    
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sun"></div>
+    <div class="planet"></div>
+</body>
+
+</html>

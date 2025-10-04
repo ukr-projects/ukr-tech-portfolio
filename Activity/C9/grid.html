@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 28px;
+            padding: 2%;
+            border: 4px solid black;
+        }
+        
+        .head{
+            border: 4px solid black;
+            grid-column: 1/4;
+        }
+
+        .left{
+            border: 4px solid green;
+            grid-row: 2/4;
+        }
+
+        .middleTop{
+            border: 4px solid violet;
+            grid-row: 3/4;            
+        }
+
+        .middleBottom{
+            border: 4px solid violet;       
+        }
+
+        .right{
+            border: 4px solid blue;
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head"></div>
+        <div class="left"></div>
+        <div class="middleTop"></div>
+        <div class="middleBottom"></div>
+        <div class="right"></div>                
+    </div>
+</body>
+
+</html>
