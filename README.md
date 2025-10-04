@@ -37,7 +37,7 @@ To view this portfolio locally, follow these steps:
 
 2.  **Navigate to the project directory**:
     ```bash
-    cd portfolio
+    cd uk-tech-portfolio
     ```
 
 3.  **Open `index.html` in your browser**:
